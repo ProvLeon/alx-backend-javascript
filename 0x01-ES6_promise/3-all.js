@@ -1,13 +1,11 @@
 import { uploadPhoto, createUser } from './utils';
 
-export default function handleProfileSignup() {
-  return createUser()
-    .then(({ firstName, lastName }) => {
-      return uploadPhoto().then(({ body }) => {
-        console.log(`${body} ${firstName} ${lastName}`);
-      });
-    })
-    .catch(() => {
-      console.log('Signup system offline');
-    });
+export default async function handleProfileSignup() {
+  try {
+    const { firstName, lastName } = await createUser();
+    const { body } = await uploadPhoto();
+    console.log(`${body} ${firstName} ${lastName}`);
+  } catch (error) {
+    console.log('Signup system offline');
+  }
 }
