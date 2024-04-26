@@ -1,4 +1,4 @@
-export default function createIteratorObject(report) {
+const createIteratorObject = (report) => {
   let employees = [];
   for (const department of Object.values(report.allEmployees)) {
     employees = employees.concat(department);
@@ -12,3 +12,5 @@ export default function createIteratorObject(report) {
       }
   };
 }
+
+export default createIteratorObject;
