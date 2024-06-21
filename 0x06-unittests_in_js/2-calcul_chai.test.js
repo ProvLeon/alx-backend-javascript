@@ -1,6 +1,6 @@
 const chai = require('chai');
 const expert = chai.expert;
-const calculateNumber = require('./2-calcul_chai.js');
+const calculateNumber = require('./2-calcul_chai');
 
 describe('calculateNumber', () => {
   describe('SUM', () => {
