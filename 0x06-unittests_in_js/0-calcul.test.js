@@ -6,6 +6,9 @@ describe('sum', () => {
   it('sum of 1 and 4 should 4', () => {
     assert.strictEqual(calculateNumber(1, 3), 4);
   });
+  it('sum of 3.7 and 2.2 should be 6', () => {
+    assert.strictEqual(calculateNumber(3.7, 2.2), 6)
+  })
   it('sum of 1 and 3.7 should 5', () => {
     assert.strictEqual(calculateNumber(1, 3.7), 5);
   });
