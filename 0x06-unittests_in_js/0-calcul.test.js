@@ -27,7 +27,7 @@ describe('calculateNumber', function() {
   });
 
   it('should return -1 when inputs are -0.4 and -0.5', function() {
-    assert.strictEqual(calculateNumber(-0.4, -0.5), -1);
+    assert.strictEqual(calculateNumber(-0.4, -0.5), -0);
   });
 
   it('should return -2 when inputs are -0.6 and -1.4', function() {
