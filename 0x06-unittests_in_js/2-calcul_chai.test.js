@@ -1,5 +1,4 @@
-const {expert } = require('chai');
-// const expert = chai.expect;
+const { expert } = require('chai');
 const calculateNumber = require('./2-calcul_chai.js');
 
 describe('calculateNumber', () => {
